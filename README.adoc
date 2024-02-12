@@ -1,0 +1,42 @@
+= Termibol
+
+:author: Kevin Nowak
+:email: budison@protonmail.com
+:github: https://github.com/budison/termibol
+:license: MIT
+
+== Overview
+
+Termibol is a simple CLI application for all the football enthusiasts out there. It allows the user to quickly query the current standings of football leagues and displays the standings in form of a table. All inside the terminal.
+
+== Features
+
+* Displaying of the standings in form of a table with all the statistics (wins, losses, goals) of every team
+* For now the Premier League, Bundesliga, La Liga and Ligue 1 are supported
+
+== Installation
+
+To use Termibol, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/budison/termibol.git`
+2. Navigate to the project directory: `cd termibol`
+3. Create a file called `application.properties` under `termibol/src/main/resources/` and add there your API-Token from http://api.football-data.org. So, simply add `api.token=[YOUR-API-TOKEN]` and `api.url=http://api.football-data.org/v4/competitions/`
+4. Run `mvn clean package`
+5. Now run the application with `java -jar target/termibol-1.0-SNAPSHOT.jar`
+
+
+== Usage
+
+The application will prompt you to enter the number of the league you would like to see. That's all.
+
+== Contributing
+
+Contributing is welcomed.
+
+== Contact
+
+If you have any questions or suggestions, feel free to reach out to Kevin Nowak at budison@protonmail.com.
+
+== Resources
+
+* http://api.football-data.org
